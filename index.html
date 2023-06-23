@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rani Hirani - Student portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+<link href="home.html">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+  background-color: #f7bca1;
+ background: rgba(0, 0, 0, 0.7)url("pink.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+  background-blend-mode: darken;
+
+    color:rgb(247, 239, 239);
+    font-family: 'Poppins', sans-serif;
+    }
+
+    nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #0000072a;
+   }
+   nav ul{
+    display: flex;
+    justify-content: center;
+   }
+   nav ul li{
+    list-style: none;
+    margin: 0 23px;
+   }
+   nav ul li a{
+    text-decoration: none;
+    color: white;
+   }
+   nav ul li a:hover{
+    color: #f7bca1;
+    font-size: 1.04rem;
+
+   }
+   .left{
+    font-size: 1.5rem;
+   }
+   .firstSection {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 80px 0;
+   }
+   .firstSection > div{
+     width: 50%;
+   }
+   .leftSection{
+    font-size: 3rem;
+     width: 34px 0;
+   }
+   .leftSection .btn{
+    background: #0c0b0b;
+    color: #f7bca1;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+   }
+   .firstSection span .my-name {
+    color:#f7bca1
+   }
+   #element{
+    color: #0c0b0b;
+   }
+   
+    @media only screen and (max-width: 768px) {
+            .firstSection > div {
+                width: 80%;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .firstSection > div {
+                width: 100%;
+            }
+        }
+
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "left">Rani's Portfolio</div>
+            <div class = "right">
+                <ul>
+                <li><a href="home.html">Home</a></li>  
+               <li><a href="services.html">Services</a></li>
+               <li><a href="/">Projects</a></li>
+               <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </div>
+           
+        </ul>
+
+
+
+
+        </nav>
+         
+
+
+    </header>
+    <main>
+        
+        
+        <section class = "firstSection">
+            <div class="leftSection">
+                Hello, My name is <span class="my-name" style=color:black;>Rani Hirani</span> 
+            <div>and I'm a passionate</div>
+            
+            <span id="element"></span>
+            <div class="buttons">
+                <a href="resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                <button class="btn">Visit Github</button>
+            </div>
+        </div>  
+        </section>
+        <section id="about">
+            
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web developer', 'Author','Coder', 'Podcaster'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
